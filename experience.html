@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sharing Your Experiences | UMSI</title>
-
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-    <a href = "#main">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+    <a href = "#main" class="skip">Skip to Main Content</a>
         <nav>
+            <img class="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "prep.html">Preparing for Your Experience</a></li>
-                <li class="active"><a href = "experience.html">Sharing Your Experience</a></li>
+                <li><a href = "experience.html">Sharing Your Experience</a></li>
                 <li><a href = "partner.html">Campus Partner Resources</a></li>
             </ul>
         </nav>
@@ -24,7 +25,7 @@
     <main id="main">
         <!-- Content taken & modified from GPT with the prompt, "can you generate a paragraph of text to motivate students to share engaged learning experience to other students? for example, sharing is designed for students to learn from each other and gain insights, also help students see whether this program is beneficial and worthwhile for them. can you think of other points as well? can you make it two paragraphs and have a title for this section?"
         GPT. (2026). GPT ( GPT-5.6 Luna September 15th version) [Large language model]. -->
-        <section>
+        <section class="overview">
             <h2>Learn from Each Other, Share Your Experience</h2>
             <p>Sharing your engaged learning experience gives other students an opportunity to learn from your experiences, perspectives, and lessons learned. By sharing what you worked on, what you found valuable or challenging, and how the experience connected to your goals, you can help peers understand what a program is really like beyond its formal description. These firsthand insights can help students set realistic expectations, discover opportunities they may not have considered, and determine whether a program aligns with their interests, learning styles, and career goals. Hearing from students who have already participated can make it easier for others to make informed decisions about how they want to spend their time and which opportunities are worthwhile for them.
             </p>
@@ -32,19 +33,22 @@
             </p>
         </section>
 
-        <section>
         <h2>Student Video Testimonials</h2>
+        <section class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/81ZO9RfIJEQ?si=bVMwrWR-rW7sCfOL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/3o36y-iaPmk?si=sIiFlRMy4ILzxAGG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/FbT3GnlnB2o?si=-BqixgegJuvFlnyn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/MXE9gYvQIAM?si=QglwQ38EmUaScqRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
-        <section>
-            <h2> Want to share something with your fellow students?</h2>
-            <p>Send an email to <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a></p>
-            <p>All content types are welcome! Text, images, videos—whatever you want to share.</p>
-        </section>
+
+    <aside>
+        <h3> Want to share something with your fellow students?</h2>
+        <div>
+            <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
+        </div>
+        <p>All content types are welcome! Text, images, videos—whatever you want to share.</p>
+    </aside>
     </main>
 
     <footer>

@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preparing for Your Experiences | UMSI</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-  <a href = "#main">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+  <a href = "#main" class="skip">Skip to Main Content</a>
         <nav>
+          <img class="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li class="active"><a href = "prep.html">Preparing for Your Experience</a></li>
@@ -21,28 +23,35 @@
   </header>
 
 <main id="main">
-<section>
+  <div class="img-grid">
+
+<section class="overview">
   <h2>Launch Your Engaged Learning Journey</h2>
-  <img src="images/UMSI_LeinweberStairs_082625_02.jpg" alt="Masters students sit, talk and work on computers in common areas of the Leinweber building.">
   <p>Transform your academic knowledge into real-world impact. Use this guide to understand your project context, evaluate team readiness, establish expectations, and begin a productive partnership.</p>
 </section>
 
 <section>
+  <img src="images/UMSI_LeinweberStairs_082625_02.jpg" alt="Masters students sit, talk and work on computers in common areas of the Leinweber building.">
+</section>
+
+<section class="intro">
   <h2>Why the Work Starts Before the Project</h2>
   <p>Engaged learning at UMSI is fundamentally different from traditional classroom assignments. You are stepping out of controlled environments and into complex, unscripted ecosystems where technical solutions intersect with human lives, organizational cultures, and real community needs.</p>
   <p>The initial phase of a project is rarely about jumping straight into execution—it is about building the foundation for ethical, sustainable engagement. Taking time to reflect on your own positionality, audit your team’s collective skills, and listen deeply to your partner’s goals prevents project failure down the line. When you ground your project in mutual respect, clear boundaries, and honest communication from Day 1, you transform a simple class deliverable into a reciprocal partnership that creates authentic value for everyone involved.</p>
 </section>
+</div>
 
 <section>
   <h2>Preparing for the Experience</h2>
   <p>Before creating a solution, take time to understand the context, evaluate your team's readiness, and identify what you still need to learn.</p>
-  <article>
+  <div class="container list-container">
+  <article class="item1">
     <h3>Approach the Work as a Collaborative Learner</h3>
     <p>Before writing code, sketching wireframes, or analyzing data, consider how your identity and previous experiences influence the way you understand the project.</p>
     <p>Your role is not to enter an organization or community as an outside expert who will fix a problem. Your role is to listen, ask questions, contribute your developing expertise, and work alongside people who understand their organization and community.</p>
   </article>
 
-  <article>
+  <article class="item2">
     <h3>Preparation Goals</h3>
     <ul>
       <li><strong>Develop social and community awareness:</strong> Examine your identity, positionality, assumptions, and privileges. Learn about the community's history and consider how power may affect participation and decision-making.
@@ -54,7 +63,7 @@
     </ul>
   </article>
 
-  <article>
+  <article class="item3">
     <h3>Questions to Consider</h3>
     <ul>
       <li>What do I hope to learn from this experience?</li>
@@ -67,7 +76,7 @@
     </ul>
   </article>
 
-  <article>
+  <article class="item4">
     <h3>Recommended Preparation Process</h3>
     <ol>
       <li><strong>Reflect on your position:</strong> Identify the experiences, identities, assumptions, and areas of privilege that may shape your approach.</li>
@@ -79,7 +88,7 @@
     </ol>
   </article>
 
-  <article>
+  <article class="item5">
     <h3>Featured Preparation Resources</h3>
     <ul>
       <li><a href="https://sites.lsa.umich.edu/equitable-teaching/social-identity-snapshot">Social Identity Snapshot</a>: Diagnostic tool to reflect on self-awareness and positionality before entering community contexts.</li>
@@ -91,13 +100,18 @@
       <li><a href="https://docs.google.com/document/d/1twc-7TYWmb_PNrOBiDI1NuJqJAuhluTICr22GRd_NLc/edit?usp=drive_link">Project Management Worksheet</a>: Guidance on clarifying the project scope and objectives, team roles, and timeline. This worksheet can be used by the project team and shared with the client.</li>
     </ul>
   </article>
+  </div>
 </section>
-<section>
 
-  <h2>Complete an Experience? Share with your peers!</h2>
-</section>
+<aside>
+    <p>Complete an Experience? Share with your peers!</p>
+    <div>
+       <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
+    </div>
+</aside>
 <!-- Content taken & modified from UMGPT with the prompt, "for the same content write me some intro content and resources for a prep page using the ELO content below" - this was after I had asked for content for the home page. " UMGPT. (2026). UMGPT ( GPT-5.6 Sol September 7th version) [Large language model]. -->
 </main>
+
 <footer>
         <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
       <address>

@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engaged Learning Resources | UMSI</title>
-
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-      <a href = "#main">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+      <a href = "#main" class="skip">Skip to Main Content</a>
         <nav>
+          <img class="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
             <ul>
                 <li class="active"><a href = "index.html">Home</a></li>
                 <li><a href = "prep.html">Preparing for Your Experience</a></li>
@@ -22,19 +23,19 @@
     </header>
 
     <main id="main">
-    <section>
+    <section class="overview">
       <h2>Build Skills. Work with Partners. Have an Impact.</h2>
       <p>
        Transform your academic foundation into real-world impact. The UMSI Engaged Learning Office (ELO) guides you through the crucial early stages of project work—from self-reflection and community context to team charters and initial client kickoff.
       </p>
+      <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
     </section>
 
-<section>
+<section class="intro">
     <h2>Why Use This Resource?</h2>
 
     <p>Engaged learning at UMSI is fundamentally different from traditional classroom assignments. You are stepping out of controlled environments and into complex, unscripted ecosystems where technical solutions intersect with human lives, organizational cultures, and real community needs.</p>
     <p>The initial phase of a project is rarely about jumping straight into execution—it is about building the foundation for ethical, sustainable engagement. Taking time to reflect on your own positionality, audit your team’s collective skills, and listen deeply to your partner’s goals prevents project failure down the line. When you ground your project in mutual respect, clear boundaries, and honest communication from Day 1, you transform a simple class deliverable into a reciprocal partnership that creates authentic value for everyone involved.</p>
-        <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
     <ul>
         <li><strong>Follow a clear process:</strong>Move from preparation and project launch through active work, reflection, and responsible closeout.</li>
         <li><strong>Find practical support:</strong> Access relevant templates, checklists, examples, and how-to guidance for common project needs.</li>
@@ -46,31 +47,32 @@
  <section>
     <h2>Guidance for Every Stage</h2>
     <p>Engaged learning projects can change as new needs, constraints, and insights emerge. Find guidance for the stage of work you are navigating <strong>now.</strong></p>
-    <article>
+    <div class="container article-container">
+    <article class="item1">
       <h3>Start Here</h3>
       <p>Set learning goals, understand the project context, examine your assumptions, define team roles, and establish a strong relationship with your partner.</p>
       <a href="prep.html">Prepare for your experience</a>
     </article>
 
-    <article>
+    <article class="item2">
       <h3>Navigate the Experience</h3>
       <p>Manage projects and teams, conduct ethical research, communicate progress, respond to feedback, and work through unexpected challenges.</p>
       <a href="experience.html">Find active project resources</a>
     </article>
 
-    <article>
+    <article class="item3">
       <h3>Wrap Up and Move Forward</h3>
       <p>Complete a responsible handoff, evaluate your impact, reflect on your growth, and translate your work into resume, portfolio, and interview content.</p>
       <a href="partner.html">Plan your next steps</a>
     </article>
+    </div>
   </section>
 
   <aside>
-    <h2>Stay Connected with ELO</h2>
-    <p>Get updates about ELO programs, workshops, events, and opportunities through the weekly newsletter.</p>
     <div>
        <a href="https://umsi.info/elo-newsletter"> Sign up for the ELO newsletter</a>
     </div>
+    <p>Get updates about ELO programs, workshops, events, and opportunities through the weekly newsletter.</p>
     </aside>
 
         <!-- Content taken & modified from UMGPT with the prompt, "Write me a webpage of intro content to help meet the following requirements - this is for the home page": and then pasted in the client objectives & project requirements"
