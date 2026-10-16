@@ -108,7 +108,7 @@ nav ul {
      display: flex;
      flex-direction: column;
      align-items: center;
-     gap: 0.5rem;
+     gap: 5px;
      margin: 0;
      padding: 0;
      list-style: none;
@@ -128,7 +128,7 @@ nav a {
      color: #ffcb05;
      font-weight: bold;
      text-decoration: none;
-     padding: 0.5rem;
+     padding: 5px;
 }
 
 nav .active a {
@@ -146,7 +146,7 @@ nav .active a {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      gap: 10px;
-     padding: 2%;
+     padding: 1%;
 }
 
 .img-grid .overview{
@@ -240,14 +240,13 @@ a.skip:focus{
 .container article:nth-child(even), .container article:nth-child(even) h3{
      grid-column: 2/ span 4;
      grid-row: auto;
-     align-content: right;
      text-align: left;
  }
 
 
 .video-container{
      display: grid;
-     grid-template-columns: repeat(1fr,4);
+     grid-template-columns: repeat(4,1fr);
 }
 
 .video-container iframe{
@@ -264,16 +263,14 @@ a.skip:focus{
 
 .link-container div{
      grid-column: 1/ span 3;
-     border-left:5%;
-     align-content: left;
+     border-left: 10px;
      text-align: left;
 }
 
 .link-container ul, .link-container ol{
-     border-left: 5%;
-     border-right: 5%;
+     border-left: 10px;
+     border-right: 10px;
      grid-column: 2 / span 3;
-     align-content: right;
      text-align: left;
 }
 
