@@ -23,7 +23,7 @@
   </header>
 
 <main id="main">
-  <div class="img-grid">
+<div class="img-grid">
 
 <section class="overview">
   <h2>Launch Your Engaged Learning Journey</h2>
@@ -43,7 +43,6 @@
 
 <section>
   <h2>Preparing for the Experience</h2>
-  <p>Before creating a solution, take time to understand the context, evaluate your team's readiness, and identify what you still need to learn.</p>
   <div class="container list-container">
   <article class="item1">
     <h3>Approach the Work as a Collaborative Learner</h3>
@@ -112,13 +111,44 @@
 <!-- Content taken & modified from UMGPT with the prompt, "for the same content write me some intro content and resources for a prep page using the ELO content below" - this was after I had asked for content for the home page. " UMGPT. (2026). UMGPT ( GPT-5.6 Sol September 7th version) [Large language model]. -->
 </main>
 
-<footer>
-        <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
-      <address>
-        <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
-      </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+    <footer>
+      <div class="footer-container">
+        <img class="footer-logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        
+        <div class="footer-address">
+          <b>School of Information</b><br/>
+          <b>University of Michigan</b><br/>
+          2200 Hayward Street<br/>
+          Ann Arbor, MI 48109<br/>
+        </div>
+
+        <div class="footer-contact">
+          <p><a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
+          <address>
+            <a href="mailto:umsi.engagement@umich.edu">Contact Us</a>
+          </address>
+        </div>
+
+        
+
+        <div class="footer-resources">
+          <p><strong>Engaged Learning Resources</strong></p>
+          <p><a href="https://www.si.umich.edu/student-experience/engaged-learning/course-based-opportunities">Client-based courses</a></p>
+          <p><a href="https://www.si.umich.edu/programs/engaged-learning/engaged-learning-programs">Engaged learning programs</a></p>
+          <p><a href="https://www.si.umich.edu/student-experience/engaged-learning/entrepreneurship-and-innovation-opportunities">Entrepreneurship and innovation</a></p>
+          <p><a href="https://www.si.umich.edu/research/student-research-opportunities">Research</a></p>
+          <p><a href="https://www.si.umich.edu/student-experience/study-abroad">Study abroad</a></p>
+          <p><a href="https://www.si.umich.edu/student-experience/engaged-learning/exposition">Exposition</a></p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; Copyright <span id="year"></span> Regents of the University of Michigan</p>
+    </div>
     </footer>
+
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
 </body>
 

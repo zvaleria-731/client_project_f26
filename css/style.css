@@ -5,14 +5,21 @@ html{
 
 body{
   background-color: #f5efe3;
-  font-size: 3.5vw;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 4.55vw;
   line-height: 1.15;
   padding: 0;
 }
 
 main{
-     margin-left: 2%;
-     margin-right: 2%;
+     margin-left: 5%;
+     margin-right: 5%;
+}
+
+main p,
+main ul,
+main ol {
+  margin-top: 1rem;
 }
 
 .logo{
@@ -21,35 +28,29 @@ main{
      height: auto;
 }
 
-h1{
-     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     font-size: 2.2em;
-     line-height: 1;
-     padding: 5%;
-     text-align: center;
+h1, h2, h3 {
+  line-height: 1.25;
 }
 
-h2{
-     font-family:Georgia, 'Times New Roman', Times, serif;
-     font-size: 1.5em;
-     line-height: 1.15;
-     padding: 2%;
-     text-align: left;
+h1 {
+  font-size: 2.2em;
+  text-align: center;
 }
 
-h3{
-     font-family:'Times New Roman', Times, serif;
-     font-size: 1.2em;
-     line-height: 1;
-     padding: 2%;
-     text-align: left;
+h2, h3 {
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.3em;
 }
 
 p,li{
-     font-family: sans-serif;
-     font-size: 1em;
-     line-height: 1.15;
-     padding: 2%;
+     line-height: 1.5;
 }
 
 a{
@@ -58,8 +59,11 @@ a{
      padding-bottom: 2%;
 }
 
+div, section{
+     margin-top: 1rem;
+}
 .article-container a{
-     padding-left: 2%;
+     text-decoration: underline;
 }
 
 main li{
@@ -86,6 +90,12 @@ a.skip{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1000;
+  position: absolute;
+  top: -20vh;
+}
+
+a.skip:focus{
+     top: 50px;
 }
 
 nav {
@@ -93,6 +103,7 @@ nav {
      width: 100%;
      background-color: #00274c;
      padding: 2% 0;
+     overflow-x:clip;
 }
 
 nav .logo {
@@ -107,9 +118,9 @@ nav .logo {
 nav ul {
      display: flex;
      flex-direction: column;
-     align-items: center;
+     align-items: flex-end;
      gap: 5px;
-     margin: 0;
+     margin: 0 5% 0 0;
      padding: 0;
      list-style: none;
      text-align: center;
@@ -117,7 +128,6 @@ nav ul {
 
 nav li {
      display: block;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      font-size: 1em;
      text-align: center;
      padding: 0;
@@ -143,7 +153,6 @@ nav .active a {
 }
 
 .img-grid{
-     display: grid;
      grid-template-columns: repeat(3, 1fr);
      gap: 10px;
      padding: 1%;
@@ -154,10 +163,16 @@ nav .active a {
      grid-row: 1/ span 2;
 }
 
+.img-grid div{
+     padding-top: 50px;
+     width: 150px;
+     height: 400px;
+}
 .img-grid img{
      width: 100%;
      height: 100%;
-     grid-column: 3/ span 2;
+     object-fit:cover;
+     grid-column: 3/4;
      grid-row: 1/ span 2;
 }
 
@@ -166,40 +181,29 @@ nav .active a {
      grid-row: auto;
 }
 
+
 aside{
      border: 2px dashed #aec4d4 ;
-     width: 60%;
-     margin: auto;
-     margin-top: 5%;
-     margin-bottom: 5%;
-     padding: 2%;
+     width: 85%;
+     margin: 2% auto;
+     padding: 1%;
      text-align: center;
 }
 
 aside div{
-     margin-top: 1%;
-     margin-bottom: 1%;
+     margin-block: 1%;
 }
 
 aside a{
+     display: inline-block;
      background-color: #ffcb05;
+     border: solid 5px #00274c;
+     padding: 1%;
+     margin-top:0.5rem;
 }
 
 aside h3{
      text-align: center;
-}
-
-footer{
-  background-color: #00274c;
-  width: 100%;
-  color: #ffffff;
-  padding-top: 2%;
-  text-align: center;
-}
-
-footer a{
-     color:#ffcb05;
-     text-decoration: underline;
 }
 
 address a{
@@ -208,70 +212,56 @@ address a{
 }
 
 
-/*Write selector/rule property to position the default position for the skip class element*/
-a.skip{
-     position: absolute;
-     top: -20vh;
-}
-
-/*Write selector/rule property to position the skip class element when it is in focus*/
-a.skip:focus{
-     position: absolute;
-     top: 50px;
+.img-grid, .container, .video-container, .link-container {
+     display: grid;
 }
 
 .container{
-     display:grid;
-     grid-template-columns: repeat(5,1fr);
-     gap: 2vh;
+     grid-template-columns: repeat(6,1fr);
+     gap: 20px;
      padding: 2%;
 }
 
-.article-container a{
-     text-decoration: underline;
-     font-family: sans-serif;
-}
-
-.container article:nth-child(odd){
-     grid-column: 1/ span 4;
+.container article{
+     grid-column: 1/-1;
      grid-row: auto;
  }
 
 .container article:nth-child(even), .container article:nth-child(even) h3{
-     grid-column: 2/ span 4;
-     grid-row: auto;
      text-align: left;
  }
 
 
 .video-container{
-     display: grid;
-     grid-template-columns: repeat(4,1fr);
+     grid-template-columns: repeat(4,minmax(0,1fr));
+     gap: 20px;
+     align-items: center;
+     justify-content: center;
+     margin: 2%;
 }
 
-.video-container iframe{
-     grid-column: 1/-1;
-     width: 90%;
-     margin: auto;
-     padding: 1%;
+.video-container iframe {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: 0;
 }
 
 .link-container{
-     display: grid;
      grid-template-columns: repeat(4,1fr);
 }
 
-.link-container div{
-     grid-column: 1/ span 3;
-     border-left: 10px;
+.link-container div, .link-container ul, .link-container ol {
+     grid-column: 1 / -1;
+     padding-left: 10px;
      text-align: left;
 }
 
-.link-container ul, .link-container ol{
-     border-left: 10px;
-     border-right: 10px;
-     grid-column: 2 / span 3;
-     text-align: left;
+.link-container ul, .link-container ol {
+     padding-right: 10px;
 }
 
 .link-container .item1{
@@ -286,4 +276,270 @@ a.skip:focus{
      grid-row: 3/4;
 }
 
+footer{
+  background-color: #00274c;
+  width: 100%;
+  color: #ffffff;
+  padding: 2%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+footer a{
+     color:#ffcb05;
+     text-decoration: underline;
+}
+
+footer a, footer p{
+     line-height:2;
+}
+
+.footer-container{
+     display: grid;
+     grid-template-columns: repeat(7, minmax(0,1fr));
+     justify-items: center;
+     align-items: center;
+}
+
+.footer-address, .footer-contact, .footer-resources{
+     grid-column: 1/-1;
+     line-height: 1.5;
+}
+
+.footer-logo{
+     display:none;
+}
+
   
+@media screen and (min-width: 1000px){
+     main{
+          margin: 2%;
+     }
+     body{
+          font-size: 1.5vw;
+          line-height:1;
+     }
+
+     nav {
+     height: 60px;
+     }
+
+     nav .logo {
+     width: 75px;
+     height: 75px;
+     }
+
+     nav ul {
+     position: relative;
+     top: 10px;
+     left: 75px;
+     flex-flow: row wrap;
+     justify-content: space-evenly;
+     }
+
+     h1{
+          line-height:1.1;
+          padding: 2% 2% 0 2%;
+     }
+
+     h2, h3{
+          line-height: 1.3;
+     }
+
+     a {
+          line-height: 1.5;
+     }
+
+     aside h3{
+          padding-bottom: 2%;
+     }
+
+     .intro ul{
+          display: flex;
+          gap: 1%;
+          margin-top: 1rem;
+          align-items: center;
+          justify-content: space-around;
+     }
+
+     .intro ul li{
+          list-style-type:none;
+          flex-basis: 20%;
+          align-content: stretch;
+          margin-left: 0;
+     }
+
+     .overview-grid, .experience, .list-container {
+          display: grid;
+     }
+
+     .overview-grid, .img-grid, .experience, .link-container {
+          align-items: center;
+     }
+     .overview-grid{
+          grid-template-columns: 1fr 1fr;
+     }
+
+     .overview-grid h2{
+          grid-column: 1/-1;
+          text-align: center;
+     }
+
+     .overview-grid p{
+          grid-column: 1/2;
+          font-size: 1.3em;
+          padding: 10%;
+     }
+
+     .overview-grid img{
+          grid-column: 2/3;
+     }
+
+     .img-grid{
+          grid-template-columns: repeat(5,19%);
+          justify-content: center;
+     }
+     .img-grid .overview{
+          grid-row: 1/2;
+     }
+
+     .img-grid .intro{
+          grid-column: 1/ span 2;
+          grid-row: 2/3;
+     }
+
+     .img-grid div{
+          grid-column: 3/ span 3;
+          grid-row: 1/ span 2;
+          width: 90%;
+          height: 90%;
+          place-self:center;
+     }
+
+     .video-container iframe {
+          min-width: 500px;
+          min-height: 300px;
+     }
+     .video-container iframe:nth-child(odd){
+          grid-column: 1/ span 2;
+     }
+
+     .video-container iframe:nth-child(even){
+          grid-column: 3/ span 2;
+     }
+
+     .experience{
+          grid-template-columns: repeat(5, 1fr);
+     }
+
+     .experience h2{
+          grid-column: 1/-1;
+     }
+
+     .experience p{
+          padding:2%;
+     }
+
+     .experience p+p{
+          margin-top: 0;
+     }
+     .experience .first-sentence{
+          font-size: 1.3em;
+          font-weight:bold;
+          color:#00274c;
+     }
+     .experience p:nth-child(2){
+          grid-column: 1/ span 4;
+     }
+
+     .experience p:last-child{
+          grid-column: 2/ span 4;
+     }
+
+     .article-container article.item1{
+          grid-column: 1/ span 2;
+     }
+
+     .article-container article.item2{
+          grid-column: 3/ span 2;
+     }
+
+     .article-container article.item3{
+          grid-column: 5/ span 2;
+     }
+
+     .list-container{
+          grid-template-columns: repeat(6, 1fr);
+          align-items: stretch;
+     }
+     .list-container .item1{
+          grid-column: 1/-1;
+          grid-row: 1/2;
+     }
+     .list-container .item2, .list-container .item4{
+          grid-column: 1/ span 3;
+     }
+     .list-container .item3, .list-container .item5{
+          grid-column: 4/ span 3;
+     }
+
+     .list-container .item2, .list-container .item3{
+          grid-row: 2/3;
+     }
+
+     .list-container .item4, .list-container .item5{
+          grid-row: 3/4;
+     }
+
+     aside{
+          width: 50%;
+     }
+
+     .link-container{
+          grid-template-columns: repeat(5, 1fr);
+          justify-items: center;
+     }
+
+     .link-container div, .link-container ul{
+          grid-row: 1/2;
+     }
+     .link1 div, .link2 ul {
+          grid-column: 1 / span 2;
+     }
+
+     .link1 ul, .link2 div {
+          grid-column: 3 / span 3;
+     }
+
+     .link3 div{
+          grid-column: 1/span 3;
+     }
+
+     .link3 ul{
+          grid-column: 4/ span 2;
+     }
+
+     .footer-logo{
+     grid-column: 1/2;
+     place-self:center;
+     width: 100%;
+     max-width: 125px;
+     margin-left: 1rem;
+     display: block;
+}
+
+     .footer-address{
+          grid-column: 2/4;
+          line-height: 1.5;
+     }
+
+     .footer-contact{
+          grid-column: 4/6;
+     }
+
+     .footer-resources{
+          grid-column: 6/8;
+          text-align: left;
+          height: auto;
+     }
+}

@@ -23,7 +23,7 @@
     </header>
 
     <main id="main">
-    <section class="overview">
+    <section class="overview overview-grid">
       <h2>Build Skills. Work with Partners. Have an Impact.</h2>
       <p>
        Transform your academic foundation into real-world impact. The UMSI Engaged Learning Office (ELO) guides you through the crucial early stages of project work—from self-reflection and community context to team charters and initial client kickoff.
@@ -37,7 +37,7 @@
     <p>Engaged learning at UMSI is fundamentally different from traditional classroom assignments. You are stepping out of controlled environments and into complex, unscripted ecosystems where technical solutions intersect with human lives, organizational cultures, and real community needs.</p>
     <p>The initial phase of a project is rarely about jumping straight into execution—it is about building the foundation for ethical, sustainable engagement. Taking time to reflect on your own positionality, audit your team’s collective skills, and listen deeply to your partner’s goals prevents project failure down the line. When you ground your project in mutual respect, clear boundaries, and honest communication from Day 1, you transform a simple class deliverable into a reciprocal partnership that creates authentic value for everyone involved.</p>
     <ul>
-        <li><strong>Follow a clear process:</strong>Move from preparation and project launch through active work, reflection, and responsible closeout.</li>
+        <li><strong>Follow a clear process:</strong> Move from preparation and project launch through active work, reflection, and responsible closeout.</li>
         <li><strong>Find practical support:</strong> Access relevant templates, checklists, examples, and how-to guidance for common project needs.</li>
         <li><strong>Build professional skills:</strong> Strengthen your communication, teamwork, project management, and ethical decision-making.</li>
         <li><strong>Turn experience into evidence:</strong> Identify what you learned and communicate your impact in resumes,portfolios, and interviews.</li>
@@ -70,6 +70,7 @@
 
   <aside>
     <div>
+      <h3>Stay Updated!</h3>
       <a href="https://umsi.info/elo-newsletter"> Sign up for the ELO newsletter</a>
     </div>
     <p>Get updates about ELO programs, workshops, events, and opportunities through the weekly newsletter.</p>
@@ -80,11 +81,42 @@
     </main>
 
     <footer>
-        <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
-      <address>
-        <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
-      </address>
-        <p>&copy; 2026 Regents of the University of Michigan</p>
+      <div class="footer-container">
+        <img class="footer-logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        
+        <div class="footer-address">
+          <b>School of Information</b><br/>
+          <b>University of Michigan</b><br/>
+          2200 Hayward Street<br/>
+          Ann Arbor, MI 48109<br/>
+        </div>
+
+        <div class="footer-contact">
+          <p><a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
+          <address>
+            <a href="mailto:umsi.engagement@umich.edu">Contact Us</a>
+          </address>
+        </div>
+
+        
+
+        <div class="footer-resources">
+          <p><strong>Engaged Learning Resources</strong></p>
+          <p><a href="https://www.si.umich.edu/student-experience/engaged-learning/course-based-opportunities">Client-based courses</a></p>
+          <p><a href="https://www.si.umich.edu/programs/engaged-learning/engaged-learning-programs">Engaged learning programs</a></p>
+          <p><a href="https://www.si.umich.edu/student-experience/engaged-learning/entrepreneurship-and-innovation-opportunities">Entrepreneurship and innovation</a></p>
+          <p><a href="https://www.si.umich.edu/research/student-research-opportunities">Research</a></p>
+          <p><a href="https://www.si.umich.edu/student-experience/study-abroad">Study abroad</a></p>
+          <p><a href="https://www.si.umich.edu/student-experience/engaged-learning/exposition">Exposition</a></p>
+        </div>
+      </div>
+     <div class="copyright">
+        <p>&copy; Copyright <span id="year"></span> Regents of the University of Michigan</p>
+    </div>
     </footer>
+
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>

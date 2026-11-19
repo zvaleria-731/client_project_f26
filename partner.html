@@ -23,7 +23,7 @@
     </header>
 
     <main id="main">
-        <section class="overview">
+        <section class="overview overview-grid">
             <h2>When you come to UMSI, you leave with a different resume.</h2>
             <p> You’ll be supported by a dedicated office that partners each year with more than 100 organizations — from the National Park Service to the Library of Congress.</p>
             <img src="images/UMSI_CareerFair_02062025_04.jpg" alt="Students and employers gather in a large event hall.">
@@ -37,7 +37,7 @@
             <p>Working with real clients also helps you develop skills that are difficult to gain from coursework alone. You can practice communicating with stakeholders, collaborating across different roles and backgrounds, managing ambiguity, and turning ideas into actionable outcomes. These experiences allow you to connect academic knowledge with practical application while gaining a clearer understanding of what different fields and careers actually look like. Most importantly, you can build confidence by seeing your work create value beyond the classroom and carry those experiences, skills, and insights into your future academic and professional endeavors.</p>
         </section>
         
-        <section class="link-container">
+        <section class="link-container link1">
             <!-- Content taken & modified from UMGPT with the prompt, "i want 1-2 short paragraphs of introductory texts for each of the following sections, client-based courses (on campus, industry experience oriented),  Engaged Learning with Community Partners (go outside to the field), and Doing Research with Faculty Members (research oriented)."
             UMGPT. (2026). UMGPT ( GPT-5.6 Sol October 12th version) [Large language model]. -->
             <div>
@@ -63,7 +63,7 @@
             </ul>
         </section>
 
-        <section class="link-container">
+        <section class="link-container link2">
             <!-- Content taken & modified from UMGPT with the prompt, "i want 1-2 short paragraphs of introductory texts for each of the following sections, client-based courses (on campus, industry experience oriented),  Engaged Learning with Community Partners (go outside to the field), and Doing Research with Faculty Members (research oriented)."
             UMGPT. (2026). UMGPT ( GPT-5.6 Sol October 12th version) [Large language model]. -->
             <div>
@@ -81,7 +81,7 @@
             </ul>
         </section>
 
-        <section class="link-container">
+        <section class="link-container link3">
             <!-- Content taken & modified from UMGPT with the prompt, "i want 1-2 short paragraphs of introductory texts for each of the following sections, client-based courses (on campus, industry experience oriented),  Engaged Learning with Community Partners (go outside to the field), and Doing Research with Faculty Members (research oriented)."
             UMGPT. (2026). UMGPT ( GPT-5.6 Sol October 12th version) [Large language model]. -->
             <div>
@@ -96,14 +96,51 @@
                 <li><a href="https://mcompass.umich.edu/_portal/tds-program-brochure?programid=11998">UMSI Teresa Noel Urban Blaurock Student Research Award</a></li>
             </ul>
         </section>
+    <aside>
+    <h3>Not Sure Where to Start? Come Talk to Us!</h3>
+        <div>
+        <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
+        </div>
+    </aside>
     </main>
 
     <footer>
-        <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
-      <address>
-        <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
-      </address>
-      <p>&copy; 2026 Regents of the University of Michigan</p>
+      <div class="footer-container">
+        <img class="footer-logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        
+        <div class="footer-address">
+          <b>School of Information</b><br/>
+          <b>University of Michigan</b><br/>
+          2200 Hayward Street<br/>
+          Ann Arbor, MI 48109<br/>
+        </div>
+
+        <div class="footer-contact">
+          <p><a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office </a></p>
+          <address>
+            <a href="mailto:umsi.engagement@umich.edu">Contact Us</a>
+          </address>
+        </div>
+
+        
+
+        <div class="footer-resources">
+          <p><strong>Engaged Learning Resources</strong></p>
+          <p><a href="https://www.si.umich.edu/student-experience/engaged-learning/course-based-opportunities">Client-based courses</a></p>
+          <p><a href="https://www.si.umich.edu/programs/engaged-learning/engaged-learning-programs">Engaged learning programs</a></p>
+          <p><a href="https://www.si.umich.edu/student-experience/engaged-learning/entrepreneurship-and-innovation-opportunities">Entrepreneurship and innovation</a></p>
+          <p><a href="https://www.si.umich.edu/research/student-research-opportunities">Research</a></p>
+          <p><a href="https://www.si.umich.edu/student-experience/study-abroad">Study abroad</a></p>
+          <p><a href="https://www.si.umich.edu/student-experience/engaged-learning/exposition">Exposition</a></p>
+        </div>
+      </div>
+        <div class="copyright">
+        <p>&copy; Copyright <span id="year"></span> Regents of the University of Michigan</p>
+    </div>
     </footer>
+
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
