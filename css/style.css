@@ -212,6 +212,7 @@ address a{
 }
 
 
+/* grid styling */
 .img-grid, .container, .video-container, .link-container {
      display: grid;
 }
@@ -276,6 +277,8 @@ address a{
      grid-row: 3/4;
 }
 
+
+/* footer styling */
 footer{
   background-color: #00274c;
   width: 100%;
@@ -310,6 +313,71 @@ footer a, footer p{
      display:none;
 }
 
+/* Student sharing form */
+form {
+  max-width: 85%;
+  margin: 2rem auto;
+  color: #00274c;
+  line-height: 1.5;
+}
+
+form fieldset {
+  min-width: 0;
+  margin: 0 0 1.5rem;
+  padding: 1rem;
+  border: 2px solid #aec4d4;
+  border-radius: 0.5rem;
+}
+
+form legend {
+  padding: 0 0.5rem;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border: 2px solid #aec4d4;
+  border-radius: 0.25rem;
+  background-color: white;
+  color: #00274c;
+  font: inherit;
+}
+
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: 3px solid #00274c;
+  outline-offset: 3px;
+}
+
+form input[type="submit"] {
+  width: auto;
+  max-width: 100%;
+  padding: 0.75rem 1.5rem;
+  border-color: #00274c;
+  background-color: #ffcb05;
+  font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+  background-color: #00274c;
+  color: #ffcb05;
+}
+
   
 @media screen and (min-width: 1000px){
      main{
@@ -319,7 +387,15 @@ footer a, footer p{
           font-size: 1.5vw;
           line-height:1;
      }
+     p.form-intro, form p{
+          font-size: 2rem;
+     }
 
+     p.form-intro{
+          width: 60%;
+          margin: auto;
+          text-align:center;
+     }
      nav {
      height: 60px;
      }

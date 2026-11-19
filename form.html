@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engaged Learning Student Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Engaged Learning Student Sharing Form</h1>
+
+        <p class="form-intro">
+            Share your engaged learning experience to help improve resources and support for UMSI students.
+        </p>
+ 
+        <!-- Uncomment the line below and connect to Formspree -->
+        <form action="https://formspree.io/f/mgakyqrp"
+        method="POST">
+
+        <fieldset>
+            <legend>Student Information</legend>
+
+            <label for="first-name" required>First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name" required>Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email" required>Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="experience-type" required>What's the experience type you're sharing with us?</label>
+            <select id="experience-type" name="experience-type" required>
+                <option value="">Select your sharing type</option>
+                <option value="Course">Course</option>
+                <option value="Program">Program</option>
+                <option value="Research">Research</option>
+                <option value="Partner">Partner</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="experience-name" required>What's the name of the experience?</label>
+            <input type="text" id="experience-name" name="experience-name" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Reflection</legend>
+
+            <label for="reflection">Reflection:</label>
+            <textarea name="reflection" id="reflection" rows="5" required></textarea>
+
+        </fieldset>
+ 
+        <fieldset>
+            <legend>Your Feedback</legend>
+
+            <label for="feedback">Feedback:</label>
+            <textarea name="feedback" id="feedback" rows="5"></textarea>
+
+        </fieldset>
+
+        <fieldset>
+        <legend>Upload Media</legend>
+        <p>Feel free to upload any media files (audio, video, images) that you would like to share with us.</p> 
+        <p>Please ensure that the files are <strong>appropriate and relevant</strong> to your engaged learning experience.</p>
+        <label for="imageFile">Select your images:</label>
+        <input type="file" id="imageFile" accept="image/*" multiple />
+
+        <label for="videoFile">Select your videos:</label>
+        <input type="file" id="videoFile" accept="video/*" multiple />
+
+        <label for="soundFile">Select your audio files:</label>
+        <input type="file" id="soundFile" accept="audio/*" multiple />
+
+        </fieldset>
+        <input type="submit" value="Submit Form!">
+
+        </form>
+    </main>
+</body>
+
+</html>
